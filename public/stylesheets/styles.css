@@ -152,13 +152,78 @@ form{
 }
 
 .logo-footer{
-  margin-top: 10px;
-  margin-left: 590px;
+  margin-top: 50px;
+  margin-left: 580px;
   width: 40px;
 }
 
 .logo-footer2{
-  margin-top: 10px;
-  margin-left: 90px;
+  margin-top: 50px;
+  margin-left: 70px;
   width: 44px;
+}
+
+.servicios{
+  margin-top: 50px;
+  display: flex;
+  gap: 3rem; /* Espaciado entre tarjetas */
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en líneas si no hay suficiente espacio */
+  justify-content: center; /* Opcional: centra las tarjetas horizontalmente */
+}
+
+
+.tarjetas{
+  background-color: whitesmoke;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  box-shadow : 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.tarjetas:hover{
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+
+}
+
+.img-servicios{
+  margin-top: 20px;
+  position: static;
+  text-align: center;
+  height: 80px;
+  width: 70px;
+  margin-left: 64px;
+  
+}
+
+.img-servicios2{
+  margin-top: 20px;
+  position: static;
+  text-align: center;
+  height: 90px;
+  width: 80px;
+  margin-left: 62px;
+}
+
+.img-servicios3{
+  margin-top: 22px;
+  position: static;
+  text-align: center;
+  height: 80px;
+  width: 70px;
+  margin-left: 64px;
+}
+
+
+.text-servicios{
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Funnel Display", serif;
+}
+
+.text-servicios3{
+  margin-top: 13px;
+  text-align: center;
+  font-family: "Funnel Display", serif;
 }
