@@ -1,22 +1,25 @@
-body{
-  background-color: #6dc96e;
+body {
+  background-color: #696969;
 }
 
-.nav-logo{
-width: 175px;
-height: 150px;
+/* LOGO */
+.nav-logo {
+  width: 175px;
+  height: 150px;
 }
 
+/* NAVBAR */
 .mi-navbar .nav-link {
   margin-left: 90px;
   font-family: "Audiowide", serif;
-  color: greenyellow !important; /* Texto blanco */
+  color: white !important;
 }
 .mi-navbar .nav-link:hover {
-  color: #ff69b4 !important; /* Rosa fuerte al pasar el cursor */
+  color: #6dc96e !important;
 }
 
-.float{
+/* BOTÓN WHATSAPP */
+.float {
   position: fixed;
   width: 60px;
   height: 60px;
@@ -26,204 +29,217 @@ height: 150px;
   color: #fff;
   border-radius: 50%;
   text-align: center;
-  box-shadow:  2px 2px 3px #999;
+  box-shadow: 2px 2px 3px #999;
   z-index: 999;
 }
-
-.fa-whatsapp{
+.fa-whatsapp {
   font-size: 60px;
 }
-
-.float:hover{
+.float:hover {
   background-color: #2beb72;
 }
 
-
-.presentacion{
-  background-color: white;
+/* SECCIÓN PRESENTACIÓN */
+.presentacion {
+  background-color: #696969;
 }
-
-.titulo1{
-  color: #6dc96e;
+.yo {
+  margin: 50px auto 5px auto;
+  display: block;
+  border-radius: 100%;
+  width: 150px;
+  height: auto;
+}
+.titulo1, .titulo2, .titulo3, .titulo4 {
+  margin-top: 100px;
   text-align: center;
   font-family: "Audiowide", serif;
+  color: black;
 }
-
-.titulo1:hover{
+.titulo1:hover, .titulo2:hover, .titulo4:hover {
+  color: #6dc96e;
+}
+.titulo3 {
+  color: #6dc96e;
+}
+.titulo3:hover {
   color: #ff69b4;
 }
-
-.text1{
+.text1 {
   text-align: center;
   font-family: "Funnel Display", serif;
-  margin-top: 0px;
+  margin-top: 5px;
+  color: white;
 }
 
-.Proyectos{
+/* PROYECTOS */
+.Proyectos {
   margin-top: 100px;
-  background-color: #6dc96e;
+  background-color: #696969;
 }
-
-.titulo2{
-  color: black;
-  margin-top: 100px;
-  font-family: "Audiowide", serif;
-  text-align: center;
-}
-
-.titulo2:hover{
-  color: #ff69b4;
-}
-
-.card-padre{
+.card-padre {
   margin-top: 10px;
   display: flex;
-  gap: 1rem; /* Espaciado entre tarjetas */
-  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en líneas si no hay suficiente espacio */
-  justify-content: center; /* Opcional: centra las tarjetas horizontalmente */
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
-.card{
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra inicial */
-  margin-top: 70px;
-  margin-bottom: 100px;
+.card {
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 70px 10px 30px 10px;
+  max-width: 300px;
 }
-
 .card:hover {
-  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
-
-.card-title{
+.card-title {
   text-align: center;
   font-family: "Funnel Display", serif;
-
 }
-
-.logo-git{
-  margin-left: 60px;
+.logo-git, .logo-web {
   width: 30px;
+  display: block;
+  margin: 0 auto;
 }
 
-.botones{
-  margin-bottom: 200px;
-  margin-top: 100px;
+/* BOTONES */
+.botones {
+  margin: 100px auto 200px auto;
   text-align: center;
 }
 
-.titulo3{
-  font-family: "Audiowide", serif;
-  color: #6dc96e;
-  text-align: center;
-}
-
-.titulo3:hover{
-  color: #ff69b4;
-}
-
-form{
+/* FORMULARIO */
+form {
   margin-top: 100px;
   background-color: white;
   text-align: center;
-}
-
-
-
-.form-control{
-  background-color: #696969;
-  width: 300px;
-  height: 100px;
-  margin-left: 500px;
   padding: 20px;
-
 }
-
-.form-control:hover{
+.form-control {
+  background-color: #696969;
+  width: 90%;
+  max-width: 400px;
+  height: 100px;
+  padding: 20px;
+  margin: 20px auto;
+  display: block;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.form-control:hover {
   background-color: #696969;
 }
-
-.form-label{
+.form-label {
   font-family: "Funnel Display", serif;
 }
 
-.footer{
+/* FOOTER */
+.footer {
   background-color: white;
+  text-align: center;
 }
-
-.logo-footer{
+.logo-footer, .logo-footer2 {
   margin-top: 50px;
-  margin-left: 580px;
   width: 40px;
+  margin: 20px;
 }
 
-.logo-footer2{
-  margin-top: 50px;
-  margin-left: 70px;
-  width: 44px;
-}
-
-.servicios{
+/* SERVICIOS */
+.servicios {
   margin-top: 50px;
   display: flex;
-  gap: 3rem; /* Espaciado entre tarjetas */
-  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en líneas si no hay suficiente espacio */
-  justify-content: center; /* Opcional: centra las tarjetas horizontalmente */
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
-
-.tarjetas{
+.tarjetas {
   background-color: whitesmoke;
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
-  box-shadow : 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-.tarjetas:hover{
-  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
-
+.tarjetas:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
-
-.img-servicios{
+.img-servicios, .img-servicios2, .img-servicios3 {
   margin-top: 20px;
-  position: static;
-  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-servicios {
   height: 80px;
   width: 70px;
-  margin-left: 64px;
-  
 }
-
-.img-servicios2{
-  margin-top: 20px;
-  position: static;
-  text-align: center;
+.img-servicios2 {
   height: 90px;
   width: 80px;
-  margin-left: 62px;
 }
-
-.img-servicios3{
-  margin-top: 22px;
-  position: static;
-  text-align: center;
+.img-servicios3 {
   height: 80px;
   width: 70px;
-  margin-left: 64px;
 }
-
-
-.text-servicios{
-  margin-top: 20px;
+.text-servicios, .text-servicios3 {
   text-align: center;
   font-family: "Funnel Display", serif;
+  margin-top: 15px;
 }
 
-.text-servicios3{
-  margin-top: 13px;
-  text-align: center;
-  font-family: "Funnel Display", serif;
+/* RESPONSIVE QUERIES */
+@media (max-width: 768px) {
+  .mi-navbar .nav-link {
+    margin-left: 20px;
+  }
+
+  .form-control {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .logo-footer,
+  .logo-footer2 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .yo {
+    margin: 30px auto;
+    width: 120px;
+  }
+
+  .nav-logo {
+    width: 120px;
+    height: auto;
+  }
+
+  .float {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .fa-whatsapp {
+    font-size: 40px;
+  }
+
+  .tarjetas {
+    width: 150px;
+    height: 150px;
+  }
+
+  .img-servicios, .img-servicios2, .img-servicios3 {
+    width: 50px;
+    height: auto;
+  }
 }
