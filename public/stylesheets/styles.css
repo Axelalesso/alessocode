@@ -51,6 +51,7 @@ body {
   border-radius: 100%;
   width: 500px;
   height: auto;
+  max-width: 90%;
 }
 .titulo1, .titulo2, .titulo3, .titulo4 {
   margin-top: 100px;
@@ -92,6 +93,7 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 70px 10px 30px 10px;
   max-width: 300px;
+  width: 90%;
 }
 .card:hover {
   transform: scale(1.05);
@@ -116,7 +118,7 @@ body {
 /* FORMULARIO */
 form {
   margin-top: 100px;
-  background-color: black;;
+  background-color: black;
   text-align: center;
   padding: 20px;
 }
@@ -139,11 +141,6 @@ form {
   font-family: "Funnel Display", serif;
 }
 
-/* FOOTER */
-.footer {
-  background-color: black;
-  text-align: center;
-}
 .logo-footer, .logo-footer2 {
   margin-top: 40px;
   width: 30px;
@@ -194,45 +191,35 @@ form {
   margin-top: 15px;
 }
 
-/* RESPONSIVE QUERIES */
+/* ----------------- RESPONSIVE ----------------- */
+
 @media (max-width: 768px) {
-  .mi-navbar .nav-link {
-    margin-left: 20px;
-  }
-
-  .form-control {
-    width: 90%;
-    margin: 20px auto;
-  }
-
-  .logo-footer,
-  .logo-footer2 {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-}
-
-@media (max-width: 480px) {
-  .yo {
-    margin: 30px auto;
-    width: 120px;
-  }
-
   .nav-logo {
     width: 120px;
     height: auto;
   }
 
-  .float {
-    width: 50px;
-    height: 50px;
-    bottom: 20px;
-    right: 20px;
+  .mi-navbar .nav-link {
+    margin-left: 20px;
+    font-size: 14px;
   }
 
-  .fa-whatsapp {
-    font-size: 40px;
+  .yo {
+    width: 300px;
+  }
+
+  .titulo1, .titulo2, .titulo3, .titulo4 {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+  .card {
+    max-width: 90%;
+  }
+
+  .form-control {
+    height: auto;
+    padding: 15px;
   }
 
   .tarjetas {
@@ -241,7 +228,69 @@ form {
   }
 
   .img-servicios, .img-servicios2, .img-servicios3 {
-    width: 50px;
+    height: 60px;
+    width: auto;
+  }
+
+  .text-servicios, .text-servicios3 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .float {
+    width: 45px;
+    height: 45px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .fa-whatsapp {
+    font-size: 45px;
+    line-height: 45px;
+  
+}
+
+
+  .titulo1, .titulo2, .titulo3, .titulo4 {
+    font-size: 18px;
+  }
+
+  .form-control {
+    width: 95%;
+  }
+
+  .card-padre {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+   .servicios {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .tarjetas {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  .img-servicios,
+  .img-servicios2,
+  .img-servicios3 {
+    width: 60px;
     height: auto;
+  }
+
+  .text-servicios,
+  .text-servicios3 {
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 0 5px;
+    line-height: 1.2;
   }
 }
