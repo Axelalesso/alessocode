@@ -1,11 +1,17 @@
 <main>
-<div class="presentacion">
-        <img  class="yo" src="/images/logo.png" alt="">
-        <p class="text1">"Programador Front-End recibido en la UTN y estudiante de una diplomatura en programación Full-Stack".<br> 
-        </p>
-    </div>
+<div class="perfil">
+  <h1>Axel Leonel Alesso</h1>
+  <p>"Desarrollador Web Full-Stack recibido en la UTN"</p>
 
-  <h2 id="Servicios" class="titulo2">SERVICIOS</h2>
+  <div class="botones">
+    <a href="/images/Axel Leonel Alesso.pdf" download class="btn-cv">CV</a>
+    <a href="https://github.com/tuusuario" target="_blank" class="btn-github">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+</div>
+
+  <h2 id="servicios" class="titulo2">SERVICIOS</h2>
   <div class="servicios">
       <div class="tarjetas">
       <img class="img-servicios"  src="/images/sitio-web.png" alt="">
@@ -31,7 +37,7 @@
 
 
     <div class="Proyectos">
-      <h1 id="Proyectos"  class="titulo2">PROYECTOS PERSONALES</h1>
+      <h1 id="proyectos"  class="titulo2">PROYECTOS PERSONALES</h1>
     <div class="card-padre">
         <div class="card" style="width: 18rem;">
           <img src="/images/todopelota.png" class="card-img-top" alt="Pagina de Noticias">
@@ -84,30 +90,48 @@
             <a target="_blank"  href="https://www.valtrion.com.ar"><img class="logo-web" src="/images/web.png" alt="link de Valtrion"></a>
           </div>
       </div>
-
-      <form   class="row g-3" action="/"  method="post" >
-            <h2 id="Contacto"  class="titulo3">Contáctanos</h2>
-              <span class="frase">
-                ¿Querés que tu negocio tenga presencia online?
-                Completá el formulario 😉
-              </span>
-            <div class="col-12" class="contacto">
-              <label for="email" class="form-label" style="color: white ;">Correo</label>
-              <input type="email" class="form-control" id="email" placeholder="usuario@email.com"  name="mail">
-            </div>
-            <div class="col-12">
-              <label for="tel" class="form-label"  style="color: white ;">Teléfono</label>
-              <input type="text" class="form-control" id="tel" placeholder=""name="tel" >
-            </div>
-            <div class="col-12">
-              <label for="mensaje" class="form-label" style="color: white ;">Mensaje</label>
-              <textarea class="form-control" id="mensaje" rows="3"  name="mensaje"></textarea>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Enviar</button>  
-          </form>
-            {{message}}
-        </div>
-      </div>
     </div>
-</main>    
+    </div>
+
+
+<section id="habilidades" class="skills-section">
+  <h2 class="skills-title">Mis Habilidades</h2>
+
+  <div class="skills-container" id="skills-container"></div>
+
+  <div class="skills-buttons">
+    <button onclick="prevSkills()">⬅️ Anterior</button>
+    <button onclick="nextSkills()">Siguiente ➡️</button>
+  </div>
+</section>
+  
+  <form class="row g-3 mx-auto p-4 shadow-lg rounded-4" action="/" method="post" style="max-width: 600px; background: #111;">
+  <h2 id="contacto" class="text-center text-white mb-2">Contácto</h2>
+  <span class="text-center mb-4" style="color:#00ff88;">
+    ¿Querés que tu negocio tenga presencia online? <br> Completá el formulario 😉
+  </span>
+
+  <div class="col-12">
+    <label for="email" class="form-label text-white">Correo</label>
+    <input type="email" class="form-control rounded-3" id="email" placeholder="Ingresá tu correo electrónico" name="mail" required>
+  </div>
+
+  <div class="col-12">
+    <label for="tel" class="form-label text-white">Teléfono</label>
+    <input type="tel" class="form-control rounded-3" id="tel" placeholder="Ingresá tu número de teléfono" name="tel" required>
+  </div>
+
+  <div class="col-12">
+    <label for="mensaje" class="form-label text-white">Mensaje</label>
+    <textarea class="form-control rounded-3" id="mensaje" rows="4" placeholder="Escribí tu mensaje aquí..." name="mensaje" required></textarea>
+  </div>
+
+  <div class="col-12">
+    <button type="submit" class="btn w-100 fw-bold btn-enviar">Enviar Mensaje</button>
+  </div>
+
+  {{message}}
+</form>
+</main> 
+<script src="/javascripts/carrousel.js"></script>
+

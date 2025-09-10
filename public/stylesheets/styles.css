@@ -1,23 +1,61 @@
 body {
-  background-color: black;
   overflow-x: hidden;
   overflow-y: auto; 
 }
 
-/* LOGO */
-.nav-logo {
-  width: 175px;
-  height: 150px;
+/*NAV*/
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #111;
+  border-bottom: 1px solid #333;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* NAVBAR */
-.mi-navbar .nav-link {
-  margin-left: 90px;
-  font-family: "Audiowide", serif;
-  color: white !important;
+.navbar {
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
 }
-.mi-navbar .nav-link:hover {
-  color: #6dc96e !important;
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin-left: 0px;
+  gap: 2.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: greenyellow;
+  transform: translateY(-2px);
+}
+
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu-toggle:hover {
+  color: #00ffd0;
 }
 
 /* BOTÓN WHATSAPP */
@@ -41,23 +79,62 @@ body {
   background-color: #2beb72;
 }
 
-/* SECCIÓN PRESENTACIÓN */
-.presentacion {
-  background-color: black;
+
+/*perfil*/
+.perfil {
+  text-align: center;
+  color: black;       /* para que se lea bien sobre fondo negro */
+  padding: 0px 17px; /* un poco de espacio arriba y abajo */
+  background: white; /* quita el fondo blanco */
 }
-.yo {
-  margin: 50px auto 5px auto;
-  display: block;
-  border-radius: 100%;
-  width: 500px;
-  height: auto;
-  max-width: 90%;
+
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* espacio entre botones */
 }
+
+.btn-cv, .btn-github {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+/* Botón CV */
+.btn-cv {
+  background: #16a34a;
+  color: black;
+}
+
+.btn-cv:hover {
+  background: #15803d;
+}
+
+/* Botón GitHub */
+.btn-github {
+  background: black;
+  color: white;
+  font-size: 20px;
+  padding: 10px 14px;
+}
+
+.btn-github:hover {
+  background: #333;
+}
+
+
 .titulo1, .titulo2, .titulo3, .titulo4 {
-  margin-top: 100px;
+  margin-top: 10px;
   text-align: center;
   font-family: "Audiowide", serif;
-  color: white;
+  color: black;
 }
 .titulo1:hover, .titulo2:hover, .titulo4:hover {
   color: #6dc96e;
@@ -68,17 +145,11 @@ body {
 .titulo3:hover {
   color: #6dc96e;
 }
-.text1 {
-  text-align: center;
-  font-family: "Funnel Display", serif;
-  margin-top: 5px;
-  color: white;
-}
 
 /* PROYECTOS */
 .Proyectos {
   margin-top: 100px;
-  background-color: black;
+  background-color: white;
 }
 .card-padre {
   margin-top: 10px;
@@ -102,6 +173,7 @@ body {
 .card-title {
   text-align: center;
   font-family: "Funnel Display", serif;
+  color: #16a34a;
 }
 .logo-git, .logo-web {
   width: 30px;
@@ -140,6 +212,24 @@ form {
 .form-label {
   font-family: "Funnel Display", serif;
 }
+
+.btn-enviar {
+    background: linear-gradient(45deg, #00ff88, #00cc66);
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    color: #fff;
+    transition: transform 0.2s ease, background 0.3s ease;
+  }
+  .btn-enviar:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #00cc66, #00ff88);
+  }
+  .form-control:focus {
+    border-color: #00ff88;
+    box-shadow: 0 0 8px #00ff88;
+  }
+
 
 
 .frase{
@@ -195,7 +285,62 @@ form {
   text-align: center;
   font-family: "Funnel Display", serif;
   margin-top: 15px;
+  color: #16a34a;
 }
+
+.skills-section {
+  padding: 60px 20px;
+  background: white;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-family: "Funnel Display", serif;
+  color: #222;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.skill-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 120px;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+}
+
+.skills-buttons button {
+  background: #222;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.skills-buttons button:hover {
+  background: #555;
+}
+
 
 /* ----------------- RESPONSIVE ----------------- */
 
