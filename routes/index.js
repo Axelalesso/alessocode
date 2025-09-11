@@ -8,6 +8,9 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
+
+
+
 router.post('/', async(req , res , next)=> {
 
   var mail = req.body.email;

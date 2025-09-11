@@ -4,59 +4,7 @@ body {
 }
 
 /*NAV*/
-.header {
-  position: sticky;
-  top: 0;
-  background-color: #111;
-  border-bottom: 1px solid #333;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.navbar {
-  background-color: #111;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 1.5rem 2rem;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  margin-left: 0px;
-  gap: 2.5rem;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #ccc;
-  font-weight: 500;
-  font-size: 1.1rem;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: greenyellow;
-  transform: translateY(-2px);
-}
-
-
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.8rem;
-  color: #ccc;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.menu-toggle:hover {
-  color: #00ffd0;
-}
+.header { position: sticky; top: 0; background-color: #111; border-bottom: 1px solid #333; z-index: 1000; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); } .navbar { background-color: #111; display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: 0 auto; padding: 1.5rem 2rem; } .nav-links { list-style: none; display: flex; margin-left: 0px; gap: 2.5rem; } .nav-links a { text-decoration: none; color: #ccc; font-weight: 500; font-size: 1.1rem; transition: color 0.3s ease, transform 0.3s ease; font-family: 'Montserrat', sans-serif; } .nav-links a:hover { color: greenyellow; transform: translateY(-2px); } .menu-toggle { display: none; background: none; border: none; font-size: 1.8rem; color: #ccc; cursor: pointer; transition: color 0.3s ease; } .menu-toggle:hover { color: #00ffd0; }
 
 /* BOTÓN WHATSAPP */
 .float {
@@ -86,6 +34,7 @@ body {
   color: black;       /* para que se lea bien sobre fondo negro */
   padding: 0px 17px; /* un poco de espacio arriba y abajo */
   background: white; /* quita el fondo blanco */
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -133,7 +82,7 @@ body {
 .titulo1, .titulo2, .titulo3, .titulo4 {
   margin-top: 10px;
   text-align: center;
-  font-family: "Audiowide", serif;
+  font-family: 'Montserrat', sans-serif;
   color: black;
 }
 .titulo1:hover, .titulo2:hover, .titulo4:hover {
@@ -172,9 +121,10 @@ body {
 }
 .card-title {
   text-align: center;
-  font-family: "Funnel Display", serif;
+  font-family: 'Montserrat', sans-serif;
   color: #16a34a;
 }
+
 .logo-git, .logo-web {
   width: 30px;
   display: block;
@@ -210,7 +160,7 @@ form {
   background-color: white;
 }
 .form-label {
-  font-family: "Funnel Display", serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .btn-enviar {
@@ -230,11 +180,9 @@ form {
     box-shadow: 0 0 8px #00ff88;
   }
 
-
-
 .frase{
   color: #2beb72;
-  font-family: "Funnel Display", serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .logo-footer, .logo-footer2 {
@@ -283,10 +231,14 @@ form {
 }
 .text-servicios, .text-servicios3 {
   text-align: center;
-  font-family: "Funnel Display", serif;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 15px;
   color: #16a34a;
 }
+
+
+
+/*PARTE DE HABILIDADES*/
 
 .skills-section {
   padding: 60px 20px;
@@ -297,7 +249,7 @@ form {
 .skills-title {
   font-size: 2rem;
   margin-bottom: 30px;
-  font-family: "Funnel Display", serif;
+  font-family: 'Montserrat', sans-serif;
   color: #222;
 }
 
@@ -342,66 +294,105 @@ form {
 }
 
 
-/* ----------------- RESPONSIVE ----------------- */
-
-@media (max-width: 768px) {
-  .nav-logo {
-    width: 120px;
-    height: auto;
+/* Tablets y pantallas medianas */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 1rem;
   }
 
-  .mi-navbar .nav-link {
-    margin-left: 20px;
-    font-size: 14px;
+  .nav-links {
+    gap: 1.2rem;
   }
 
   .yo {
-    width: 300px;
+    width: 250px;
+  }
+
+  .titulo1, .titulo2, .titulo3, .titulo4 {
+    font-size: 22px;
+  }
+
+  .skills-container {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+
+/* Celulares grandes */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    padding: 1rem;
+    width: 200px;
+    border-radius: 8px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .yo {
+    width: 220px;
   }
 
   .titulo1, .titulo2, .titulo3, .titulo4 {
     font-size: 20px;
-    margin-top: 50px;
+    margin-top: 40px;
   }
 
   .card {
-    max-width: 90%;
+    max-width: 95%;
+    margin: 20px auto;
   }
 
-  .form-control {
-    height: auto;
-    padding: 15px;
+  .servicios {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   }
 
   .tarjetas {
-    width: 150px;
-    height: 150px;
-  }
-
-  .img-servicios, .img-servicios2, .img-servicios3 {
-    height: 60px;
-    width: auto;
+    width: 160px;
+    height: 160px;
   }
 
   .text-servicios, .text-servicios3 {
     font-size: 14px;
   }
+
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-card {
+    width: 80%;
+    max-width: 300px;
+  }
 }
 
+/* Celulares chicos */
 @media (max-width: 480px) {
   .float {
-    width: 45px;
-    height: 45px;
-    bottom: 15px;
-    right: 15px;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
   }
 
   .fa-whatsapp {
-    font-size: 45px;
-    line-height: 45px;
-  
-}
-
+    font-size: 40px;
+    line-height: 50px;
+  }
 
   .titulo1, .titulo2, .titulo3, .titulo4 {
     font-size: 18px;
@@ -409,39 +400,29 @@ form {
 
   .form-control {
     width: 95%;
-  }
-
-  .card-padre {
-    flex-direction: column;
-    align-items: center;
-  }
-
-
-   .servicios {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+    font-size: 14px;
   }
 
   .tarjetas {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    padding: 10px;
+    width: 130px;
+    height: 130px;
   }
 
   .img-servicios,
   .img-servicios2,
   .img-servicios3 {
-    width: 60px;
+    width: 55px;
     height: auto;
   }
 
   .text-servicios,
   .text-servicios3 {
     font-size: 12px;
-    margin-top: 10px;
-    padding: 0 5px;
-    line-height: 1.2;
+    margin-top: 8px;
+  }
+
+  .skill-card {
+    font-size: 1rem;
+    padding: 15px;
   }
 }
