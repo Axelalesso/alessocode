@@ -1,0 +1,142 @@
+.servicios {
+  padding: 100px 20px;
+  background: #0b0b0b;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* TAG */
+.tag {
+  color: #00ff99;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* TITULO */
+.servicios h2 {
+  font-size: 42px;
+  margin-top: 15px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+.highlight {
+  color: #00ff99;
+  text-shadow: 0 0 12px rgba(0, 255, 150, 0.6);
+}
+
+/* INTRO */
+.intro {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
+  color: #aaa;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+}
+
+/* GRID */
+.servicios-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.card {
+  background: linear-gradient(145deg, #0a0a0a, #111);
+  padding: 30px;
+  border-radius: 18px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Glow hover */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(0,255,150,0.15), transparent 60%);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 255, 150, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 255, 150, 0.15);
+}
+
+/* ICON */
+.icon {
+  font-size: 32px;
+  color: #00ff99;
+  margin-bottom: 20px;
+}
+
+/* TITULO CARD */
+.card h3 {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+}
+
+/* TEXTO */
+.card p {
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* LINEA DECORATIVA */
+.line {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #00ff99;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.card:hover .line {
+  width: 70px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .servicios-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .servicios h2 {
+    font-size: 32px;
+  }
+
+  .servicios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    text-align: center;
+  }
+}

@@ -1,0 +1,246 @@
+/* --- Estilos base del Footer --- */
+.footer-container {
+  background-color: #030303;
+  color: white;
+  padding: 80px 5% 40px;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  border-top: 1px solid rgba(0, 255, 136, 0.1);
+  overflow: hidden;
+}
+
+.footer-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 60px;
+  position: relative;
+  z-index: 5;
+}
+
+/* --- Tratamiento del Logo --- */
+.logo-wrapper {
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  height: 50px;
+  filter: drop-shadow(0 0 5px rgba(0, 255, 136, 0.2));
+  transition: filter 0.3s ease;
+}
+
+.footer-logo:hover {
+  filter: drop-shadow(0 0 12px rgba(0, 255, 136, 0.5));
+}
+
+/* --- Tipografía y Enlaces --- */
+.footer-tag {
+  color: #00ff88;
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-links li:hover {
+  color: #00ff88;
+  padding-left: 5px;
+}
+
+/* --- Contacto y Redes Sociales --- */
+.text-glow {
+  color: white;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}
+
+.whatsapp-details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.whatsapp-icon-main {
+  color: #00ff88;
+  font-size: 1.4rem;
+}
+
+.social-links-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.social-btn {
+  color: white;
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.social-btn:hover {
+  border-color: #00ff88;
+  color: #00ff88;
+  background: rgba(0, 255, 136, 0.05);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 255, 136, 0.1);
+}
+
+/* --- Fondo y Detalles --- */
+.footer-glow {
+  position: absolute;
+  bottom: -20%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 255, 136, 0.05) 0%, transparent 70%);
+  filter: blur(60px);
+}
+
+.footer-bottom {
+  margin-top: 60px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 2px;
+}
+
+/* ========================= */
+/* TABLETS */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+  .footer-container {
+    padding: 70px 40px 30px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+}
+
+/* ========================= */
+/* CELULARES */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .footer-container {
+    padding: 60px 25px 30px;
+    text-align: center;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .logo-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-logo {
+    height: 45px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links li {
+    margin-bottom: 15px;
+  }
+
+  .footer-links li:hover {
+    padding-left: 0;
+  }
+
+  .whatsapp-details {
+    justify-content: center;
+  }
+
+  .social-links-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-bottom {
+    margin-top: 40px;
+    font-size: .8rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+  }
+
+  .footer-glow {
+    width: 300px;
+    height: 300px;
+    right: -150px;
+    bottom: -100px;
+  }
+
+}
+
+/* ========================= */
+/* CELULARES PEQUEÑOS */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+  .footer-container {
+    padding: 50px 20px 25px;
+  }
+
+  .footer-tag {
+    font-size: .75rem;
+    letter-spacing: 3px;
+  }
+
+  .footer-logo {
+    height: 40px;
+  }
+
+  .social-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 1.25rem;
+  }
+
+  .footer-links li {
+    font-size: .95rem;
+  }
+
+}
