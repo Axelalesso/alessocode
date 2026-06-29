@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="footer-column footer-brand">
           <div className="logo-wrapper">
             <img 
-              src="/public/img/logo-alessocode.png" 
+              src="/img/logo-alessocode.png" 
               alt="Alesso Code Logo" 
               className="footer-logo"
             />
