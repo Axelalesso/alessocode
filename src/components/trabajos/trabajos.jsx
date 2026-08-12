@@ -31,6 +31,12 @@ const trabajos = [
     country: "Argentina",
     url: "https://www.consultoramdg.com.ar",
   },
+  {
+    img: "/img/inmobiliaria.png",
+    title: "Inmobiliaria Diaz & Asociados",
+    country: "Argentina",
+    url: "https://www.inmobiliariadiazyasociados.com.ar",
+  },
 ];
 
 export default function Trabajos() {
