@@ -41,7 +41,7 @@ const trabajos = [
     img: "/img/juridico.png",
     title: "Estudio Jurídico Ledesma Costas & Asociados",
     country: "Argentina",
-    url: "https://www.inmobiliariadiazyasociados.com.ar",
+    url: "https://www.estudiojuridicoledesmacostas.com.ar",
   },
 ];
 
